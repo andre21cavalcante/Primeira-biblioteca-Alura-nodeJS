@@ -1,0 +1,24 @@
+{
+  "name": "alura-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andre21cavalcante/Primeira-biblioteca-nodeJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andre21cavalcante/Primeira-biblioteca-nodeJS/issues"
+  },
+  "homepage": "https://github.com/andre21cavalcante/Primeira-biblioteca-nodeJS#readme",
+  "dependencies": {
+    "chalk": "^5.0.1"
+  },
+  "type": "module"
+}
