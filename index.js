@@ -5,12 +5,23 @@ function trataErro(erro){
     throw new Error(chalk.red(erro.code, "Não há arquivo no caminho"))
 }
 
-function pegarArquivo(caminhoDoArquivo){
+async function pegarArquivo(caminhoDoArquivo){
+    const encoding = "utf-8";
+    try{
+        const texto = await fs.promises.readFile(caminhoDoArquivo, encoding)
+        console.log(chalk.green(texto))
+    }catch (erro){
+        trataErro(erro)
+    }
+
+}
+
+/*function pegarArquivo(caminhoDoArquivo){
     const encoding = "utf-8";
     fs.promises.readFile(caminhoDoArquivo, encoding)
     .then((texto) => (console.log(chalk.green(texto))))
     .catch((erro) => trataErro(erro))
-}
+}*/
 
 /*function pegarArquivo(caminhoDoArquivo){
     const encoding = "utf-8";
